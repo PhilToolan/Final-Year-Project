@@ -1,21 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Text;
-using System;
+using UnityEngine;
 
 // Sent from server to client.
 public enum ServerPackets
 {
     welcome = 1,
-    udpTest
+    spawnPlayer,
+    playerPosition,
+    playerRotation
+
 }
 
 // Sent from client to server.
 public enum ClientPackets
 {
     welcomeReceived = 1,
-    udpTestReceived
+    playerMovement
 }
 
 public class Packet : IDisposable
@@ -158,6 +161,24 @@ public class Packet : IDisposable
     {
         Write(_value.Length); // Add the length of the string to the packet
         buffer.AddRange(Encoding.ASCII.GetBytes(_value)); // Add the string itself
+    }
+    // Adds a Vector3 to the packet
+    // _value is the Vector3 to add
+    public void Write(Vector3 _value)
+    {
+        Write(_value.x);
+        Write(_value.y);
+        Write(_value.z);
+
+    }
+    // Adds a Quaternion to the packet
+    // _value is the Quaternion to add
+    public void Write(Quaternion _value)
+    {
+        Write(_value.x);
+        Write(_value.y);
+        Write(_value.z);
+        Write(_value.w);
     }
     #endregion
 
@@ -329,6 +350,17 @@ public class Packet : IDisposable
         {
             throw new Exception("Could not read value of type 'string'!");
         }
+    }
+
+    // Reads a Vector3 from the packet
+    public Vector3 ReadVector3(bool _moveReadPos = true)
+    {
+        return new Vector3(ReadFloat(_moveReadPos), ReadFloat(_moveReadPos), ReadFloat(_moveReadPos));
+    }
+    // Reads a Quaternion from the packet
+    public Quaternion ReadQuaternion(bool _moveReadPos = true)
+    {
+        return new Quaternion(ReadFloat(_moveReadPos), ReadFloat(_moveReadPos), ReadFloat(_moveReadPos), ReadFloat(_moveReadPos));
     }
     #endregion
 

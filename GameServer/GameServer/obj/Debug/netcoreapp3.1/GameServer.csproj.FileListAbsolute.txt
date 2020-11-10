@@ -10,3 +10,4 @@ C:\Users\Legion67\Documents\FYP\GameServer\GameServer\obj\Debug\netcoreapp3.1\Ga
 C:\Users\Legion67\Documents\FYP\GameServer\GameServer\obj\Debug\netcoreapp3.1\GameServer.dll
 C:\Users\Legion67\Documents\FYP\GameServer\GameServer\obj\Debug\netcoreapp3.1\GameServer.pdb
 C:\Users\Legion67\Documents\FYP\GameServer\GameServer\obj\Debug\netcoreapp3.1\GameServer.genruntimeconfig.cache
+C:\Users\Legion67\Documents\FYP\GameServer\GameServer\obj\Debug\netcoreapp3.1\GameServer.csproj.CoreCompileInputs.cache
