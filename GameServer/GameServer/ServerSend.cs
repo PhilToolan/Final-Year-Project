@@ -6,13 +6,11 @@ namespace GameServer
 {
     class ServerSend
     {
-
         private static void SendTCPData(int _toClient, Packet _packet)
         {
             _packet.WriteLength();
             Server.clients[_toClient].tcp.SendData(_packet);
         }
-
 
         private static void SendUDPData(int _toClient, Packet _packet)
         {
@@ -23,44 +21,47 @@ namespace GameServer
         private static void SendTCPDataToAll(Packet _packet)
         {
             _packet.WriteLength();
-            for (int i = 1; i < Server.MaxPlayers; i++)
+            for (int i = 1; i <= Server.MaxPlayers; i++)
             {
                 Server.clients[i].tcp.SendData(_packet);
             }
         }
-
-        private static void SendTCPDataToAll(int _execptClient, Packet _packet)
+        private static void SendTCPDataToAll(int _exceptClient, Packet _packet)
         {
             _packet.WriteLength();
-            for (int i = 1; i < Server.MaxPlayers; i++)
+            for (int i = 1; i <= Server.MaxPlayers; i++)
             {
-                Server.clients[i].tcp.SendData(_packet);
+                if (i != _exceptClient)
+                {
+                    Server.clients[i].tcp.SendData(_packet);
+                }
             }
         }
-
 
         private static void SendUDPDataToAll(Packet _packet)
         {
             _packet.WriteLength();
-            for (int i = 1; i < Server.MaxPlayers; i++)
+            for (int i = 1; i <= Server.MaxPlayers; i++)
             {
                 Server.clients[i].udp.SendData(_packet);
             }
         }
-
-        private static void SendUDPDataToAll(int _execptClient, Packet _packet)
+        private static void SendUDPDataToAll(int _exceptClient, Packet _packet)
         {
             _packet.WriteLength();
-            for (int i = 1; i < Server.MaxPlayers; i++)
+            for (int i = 1; i <= Server.MaxPlayers; i++)
             {
-                Server.clients[i].udp.SendData(_packet);
+                if (i != _exceptClient)
+                {
+                    Server.clients[i].udp.SendData(_packet);
+                }
             }
         }
 
         #region Packets
         public static void Welcome(int _toClient, string _msg)
         {
-            using(Packet _packet = new Packet((int)ServerPackets.welcome))
+            using (Packet _packet = new Packet((int)ServerPackets.welcome))
             {
                 _packet.Write(_msg);
                 _packet.Write(_toClient);
@@ -68,16 +69,6 @@ namespace GameServer
                 SendTCPData(_toClient, _packet);
             }
         }
-
-        /*public static void UDPTest(int _toClient)
-        {
-            using (Packet _packet = new Packet((int)ServerPackets.udpTest))
-            {
-                _packet.Write("A test packet for UDP.");
-
-                SendUDPData(_toClient, _packet);
-            }
-        }*/
 
         public static void SpawnPlayer(int _toClient, Player _player)
         {
@@ -88,14 +79,13 @@ namespace GameServer
                 _packet.Write(_player.position);
                 _packet.Write(_player.rotation);
 
-                // Use TCP as this is sent once at the beginning and we cannot risk losing any data
                 SendTCPData(_toClient, _packet);
             }
         }
 
         public static void PlayerPosition(Player _player)
         {
-            using(Packet _packet = new Packet((int)ServerPackets.playerPosition))
+            using (Packet _packet = new Packet((int)ServerPackets.playerPosition))
             {
                 _packet.Write(_player.id);
                 _packet.Write(_player.position);

@@ -15,6 +15,7 @@ namespace GameServer
                     _client.player.Update();
                 }
             }
+
             ThreadManager.UpdateMain();
         }
     }

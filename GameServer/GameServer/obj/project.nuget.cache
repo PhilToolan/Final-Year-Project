@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "/fcYXSyzJRpWDfYTedMiUPI9wsWjY2h9PerlJyJlE+HEQhaceahcQkRE+wZ9AE8uiyp62GY9pFuJVTdpQjGaoQ==",
+  "dgSpecHash": "IXAXnzbhGwwGtdkkUU2vj3xfgcNfiELiFtGI0TqELm2XTbnU6zz7rjtz23a70fez9rlDinoxoROd2ch7Vt/B+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Legion67\\Documents\\FYP\\GameServer\\GameServer\\GameServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Legion67\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+    "C:\\Users\\Legion67\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Legion67\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Legion67\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Legion67\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Legion67\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }

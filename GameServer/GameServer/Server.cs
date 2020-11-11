@@ -14,33 +14,31 @@ namespace GameServer
         public delegate void PacketHandler(int _fromClient, Packet _packet);
         public static Dictionary<int, PacketHandler> packetHandlers;
 
-
         private static TcpListener tcpListener;
-        private static UdpClient udpListener; //Called listener to make it easier to keep track of
+        private static UdpClient udpListener;
 
         public static void Start(int _maxPlayers, int _port)
         {
             MaxPlayers = _maxPlayers;
             Port = _port;
 
-            Console.WriteLine($"Starting server...");
-            IntialiseServerData();
+            Console.WriteLine("Starting server...");
+            InitializeServerData();
 
             tcpListener = new TcpListener(IPAddress.Any, Port);
             tcpListener.Start();
-            tcpListener.BeginAcceptTcpClient(new AsyncCallback(TCPConnectCallback), null);
+            tcpListener.BeginAcceptTcpClient(TCPConnectCallback, null);
 
             udpListener = new UdpClient(Port);
             udpListener.BeginReceive(UDPReceiveCallback, null);
 
-            Console.WriteLine($"Server started on {Port}.");
-
+            Console.WriteLine($"Server started on port {Port}.");
         }
 
         private static void TCPConnectCallback(IAsyncResult _result)
         {
             TcpClient _client = tcpListener.EndAcceptTcpClient(_result);
-            tcpListener.BeginAcceptTcpClient(new AsyncCallback(TCPConnectCallback), null);
+            tcpListener.BeginAcceptTcpClient(TCPConnectCallback, null);
             Console.WriteLine($"Incoming connection from {_client.Client.RemoteEndPoint}...");
 
             for (int i = 1; i <= MaxPlayers; i++)
@@ -52,7 +50,7 @@ namespace GameServer
                 }
             }
 
-            Console.WriteLine($"{_client.Client.RemoteEndPoint} failed to connect: server full!");
+            Console.WriteLine($"{_client.Client.RemoteEndPoint} failed to connect: Server full!");
         }
 
         private static void UDPReceiveCallback(IAsyncResult _result)
@@ -95,7 +93,6 @@ namespace GameServer
             }
         }
 
-
         public static void SendUDPData(IPEndPoint _clientEndPoint, Packet _packet)
         {
             try
@@ -107,11 +104,11 @@ namespace GameServer
             }
             catch (Exception _ex)
             {
-                Console.WriteLine($"Error sending UDP data: {_ex} to {_clientEndPoint}");
+                Console.WriteLine($"Error sending data to {_clientEndPoint} via UDP: {_ex}");
             }
         }
 
-        private static void IntialiseServerData()
+        private static void InitializeServerData()
         {
             for (int i = 1; i <= MaxPlayers; i++)
             {
@@ -120,13 +117,10 @@ namespace GameServer
 
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived},
-                { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement},
-
-
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
+                { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement },
             };
-            Console.WriteLine("Initialised packets!");
-
+            Console.WriteLine("Initialized packets.");
         }
     }
 }

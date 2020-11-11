@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Numerics; // For vectors, quaternions etc...
+using System.Numerics;
 
 namespace GameServer
 {
@@ -13,7 +13,6 @@ namespace GameServer
         public Vector3 position;
         public Quaternion rotation;
 
-        // Has same effect as using * Time.deltaTime in Unity
         private float moveSpeed = 5f / Constants.TICKS_PER_SEC;
         private bool[] inputs;
 
@@ -30,7 +29,7 @@ namespace GameServer
         public void Update()
         {
             Vector2 _inputDirection = Vector2.Zero;
-            if(inputs[0])
+            if (inputs[0])
             {
                 _inputDirection.Y += 1;
             }
@@ -50,7 +49,6 @@ namespace GameServer
             Move(_inputDirection);
         }
 
-
         private void Move(Vector2 _inputDirection)
         {
             Vector3 _forward = Vector3.Transform(new Vector3(0, 0, 1), rotation);
@@ -62,7 +60,6 @@ namespace GameServer
             ServerSend.PlayerPosition(this);
             ServerSend.PlayerRotation(this);
         }
-
 
         public void SetInput(bool[] _inputs, Quaternion _rotation)
         {

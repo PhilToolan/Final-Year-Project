@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Net;
-using System.Net.Sockets;
 using UnityEngine;
 
 public class ClientHandle : MonoBehaviour
 {
     public static void Welcome(Packet _packet)
     {
-        // Must read in same order as sent to be safe there is no error
         string _msg = _packet.ReadString();
         int _myId = _packet.ReadInt();
 
@@ -18,15 +16,6 @@ public class ClientHandle : MonoBehaviour
 
         Client.instance.udp.Connect(((IPEndPoint)Client.instance.tcp.socket.Client.LocalEndPoint).Port);
     }
-
-    /*public static void UDPTest(Packet _packet)
-    {
-        string _msg = _packet.ReadString();
-
-        Debug.Log($"Received packet via UDP. Contains message: {_msg}");
-        ClientSend.UDPTestReceived();
-    }*/
-
 
     public static void SpawnPlayer(Packet _packet)
     {
@@ -53,5 +42,4 @@ public class ClientHandle : MonoBehaviour
 
         GameManager.players[_id].transform.rotation = _rotation;
     }
-
 }

@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Net.Sockets;
 using UnityEngine;
 
 public class ClientSend : MonoBehaviour
@@ -27,18 +26,7 @@ public class ClientSend : MonoBehaviour
 
             SendTCPData(_packet);
         }
-
     }
-
-    /*public static void UDPTestReceived()
-    {
-        using (Packet _packet = new Packet((int)ClientPackets.udpTestReceived))
-        {
-            _packet.Write("Received a UDP packet, YAY!");
-
-            SendUDPData(_packet);
-        }
-    }*/
 
     public static void PlayerMovement(bool[] _inputs)
     {

@@ -22,7 +22,3 @@ public class PlayerController : MonoBehaviour
         ClientSend.PlayerMovement(_inputs);
     }
 }
-
-
-
-
