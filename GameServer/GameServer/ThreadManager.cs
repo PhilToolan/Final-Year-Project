@@ -10,7 +10,7 @@ namespace GameServer
         private static readonly List<Action> executeCopiedOnMainThread = new List<Action>();
         private static bool actionToExecuteOnMainThread = false;
 
-        /// <summary>Sets an action to be executed on the main thread.</summary>
+        /// Sets an action to be executed on the main thread.
         /// <param name="_action">The action to be executed on the main thread.</param>
         public static void ExecuteOnMainThread(Action _action)
         {
@@ -27,7 +27,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Executes all code meant to run on the main thread. NOTE: Call this ONLY from the main thread.</summary>
+        /// Executes all code meant to run on the main thread. NOTE: Call this ONLY from the main thread.
         public static void UpdateMain()
         {
             if (actionToExecuteOnMainThread)

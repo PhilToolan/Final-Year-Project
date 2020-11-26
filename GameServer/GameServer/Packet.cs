@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GameServer
 {
-    /// <summary>Sent from server to client.</summary>
+    /// Sent from server to client.
     public enum ServerPackets
     {
         welcome = 1,
@@ -14,7 +14,7 @@ namespace GameServer
         playerRotation
     }
 
-    /// <summary>Sent from client to server.</summary>
+    /// Sent from client to server.
     public enum ClientPackets
     {
         welcomeReceived = 1,
@@ -27,35 +27,35 @@ namespace GameServer
         private byte[] readableBuffer;
         private int readPos;
 
-        /// <summary>Creates a new empty packet (without an ID).</summary>
+        /// Creates a new empty packet (without an ID).
         public Packet()
         {
-            buffer = new List<byte>(); // Initialize buffer
+            buffer = new List<byte>(); // Initialise buffer
             readPos = 0; // Set readPos to 0
         }
 
-        /// <summary>Creates a new packet with a given ID. Used for sending.</summary>
+        /// Creates a new packet with a given ID. Used for sending.
         /// <param name="_id">The packet ID.</param>
         public Packet(int _id)
         {
-            buffer = new List<byte>(); // Initialize buffer
+            buffer = new List<byte>(); // Initialise buffer
             readPos = 0; // Set readPos to 0
 
             Write(_id); // Write packet id to the buffer
         }
 
-        /// <summary>Creates a packet from which data can be read. Used for receiving.</summary>
+        /// Creates a packet from which data can be read. Used for receiving.
         /// <param name="_data">The bytes to add to the packet.</param>
         public Packet(byte[] _data)
         {
-            buffer = new List<byte>(); // Initialize buffer
+            buffer = new List<byte>(); // Initialise buffer
             readPos = 0; // Set readPos to 0
 
             SetBytes(_data);
         }
 
         #region Functions
-        /// <summary>Sets the packet's content and prepares it to be read.</summary>
+        /// Sets the packet's content and prepares it to be read.
         /// <param name="_data">The bytes to add to the packet.</param>
         public void SetBytes(byte[] _data)
         {
@@ -63,39 +63,39 @@ namespace GameServer
             readableBuffer = buffer.ToArray();
         }
 
-        /// <summary>Inserts the length of the packet's content at the start of the buffer.</summary>
+        /// Inserts the length of the packet's content at the start of the buffer.
         public void WriteLength()
         {
             buffer.InsertRange(0, BitConverter.GetBytes(buffer.Count)); // Insert the byte length of the packet at the very beginning
         }
 
-        /// <summary>Inserts the given int at the start of the buffer.</summary>
+        /// Inserts the given int at the start of the buffer.
         /// <param name="_value">The int to insert.</param>
         public void InsertInt(int _value)
         {
             buffer.InsertRange(0, BitConverter.GetBytes(_value)); // Insert the int at the start of the buffer
         }
 
-        /// <summary>Gets the packet's content in array form.</summary>
+        /// Gets the packet's content in array form.
         public byte[] ToArray()
         {
             readableBuffer = buffer.ToArray();
             return readableBuffer;
         }
 
-        /// <summary>Gets the length of the packet's content.</summary>
+        /// Gets the length of the packet's content.
         public int Length()
         {
             return buffer.Count; // Return the length of buffer
         }
 
-        /// <summary>Gets the length of the unread data contained in the packet.</summary>
+        /// Gets the length of the unread data contained in the packet.
         public int UnreadLength()
         {
             return Length() - readPos; // Return the remaining length (unread)
         }
 
-        /// <summary>Resets the packet instance to allow it to be reused.</summary>
+        /// Resets the packet instance to allow it to be reused.
         /// <param name="_shouldReset">Whether or not to reset the packet.</param>
         public void Reset(bool _shouldReset = true)
         {
@@ -113,56 +113,56 @@ namespace GameServer
         #endregion
 
         #region Write Data
-        /// <summary>Adds a byte to the packet.</summary>
+        /// Adds a byte to the packet.
         /// <param name="_value">The byte to add.</param>
         public void Write(byte _value)
         {
             buffer.Add(_value);
         }
-        /// <summary>Adds an array of bytes to the packet.</summary>
+        /// Adds an array of bytes to the packet.
         /// <param name="_value">The byte array to add.</param>
         public void Write(byte[] _value)
         {
             buffer.AddRange(_value);
         }
-        /// <summary>Adds a short to the packet.</summary>
+        /// Adds a short to the packet.
         /// <param name="_value">The short to add.</param>
         public void Write(short _value)
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
-        /// <summary>Adds an int to the packet.</summary>
+        /// Adds an int to the packet.
         /// <param name="_value">The int to add.</param>
         public void Write(int _value)
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
-        /// <summary>Adds a long to the packet.</summary>
+        /// Adds a long to the packet.
         /// <param name="_value">The long to add.</param>
         public void Write(long _value)
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
-        /// <summary>Adds a float to the packet.</summary>
+        /// Adds a float to the packet.
         /// <param name="_value">The float to add.</param>
         public void Write(float _value)
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
-        /// <summary>Adds a bool to the packet.</summary>
+        /// Adds a bool to the packet.
         /// <param name="_value">The bool to add.</param>
         public void Write(bool _value)
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
-        /// <summary>Adds a string to the packet.</summary>
+        /// Adds a string to the packet.
         /// <param name="_value">The string to add.</param>
         public void Write(string _value)
         {
             Write(_value.Length); // Add the length of the string to the packet
             buffer.AddRange(Encoding.ASCII.GetBytes(_value)); // Add the string itself
         }
-        /// <summary>Adds a Vector3 to the packet.</summary>
+        /// Adds a Vector3 to the packet.
         /// <param name="_value">The Vector3 to add.</param>
         public void Write(Vector3 _value)
         {
@@ -170,7 +170,7 @@ namespace GameServer
             Write(_value.Y);
             Write(_value.Z);
         }
-        /// <summary>Adds a Quaternion to the packet.</summary>
+        /// Adds a Quaternion to the packet.
         /// <param name="_value">The Quaternion to add.</param>
         public void Write(Quaternion _value)
         {
@@ -182,7 +182,7 @@ namespace GameServer
         #endregion
 
         #region Read Data
-        /// <summary>Reads a byte from the packet.</summary>
+        /// Reads a byte from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public byte ReadByte(bool _moveReadPos = true)
         {
@@ -203,7 +203,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads an array of bytes from the packet.</summary>
+        /// Reads an array of bytes from the packet.
         /// <param name="_length">The length of the byte array.</param>
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public byte[] ReadBytes(int _length, bool _moveReadPos = true)
@@ -225,7 +225,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a short from the packet.</summary>
+        /// Reads a short from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public short ReadShort(bool _moveReadPos = true)
         {
@@ -246,7 +246,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads an int from the packet.</summary>
+        /// Reads an int from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public int ReadInt(bool _moveReadPos = true)
         {
@@ -267,7 +267,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a long from the packet.</summary>
+        /// Reads a long from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public long ReadLong(bool _moveReadPos = true)
         {
@@ -288,7 +288,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a float from the packet.</summary>
+        /// Reads a float from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public float ReadFloat(bool _moveReadPos = true)
         {
@@ -309,7 +309,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a bool from the packet.</summary>
+        /// Reads a bool from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public bool ReadBool(bool _moveReadPos = true)
         {
@@ -330,7 +330,7 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a string from the packet.</summary>
+        /// Reads a string from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public string ReadString(bool _moveReadPos = true)
         {
@@ -351,14 +351,14 @@ namespace GameServer
             }
         }
 
-        /// <summary>Reads a Vector3 from the packet.</summary>
+        /// Reads a Vector3 from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public Vector3 ReadVector3(bool _moveReadPos = true)
         {
             return new Vector3(ReadFloat(_moveReadPos), ReadFloat(_moveReadPos), ReadFloat(_moveReadPos));
         }
 
-        /// <summary>Reads a Quaternion from the packet.</summary>
+        /// Reads a Quaternion from the packet.
         /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
         public Quaternion ReadQuaternion(bool _moveReadPos = true)
         {
