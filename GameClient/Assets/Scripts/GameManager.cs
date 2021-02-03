@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject localPlayerPrefab;
     public GameObject playerPrefab;
+    public GameObject vrPlayerPrefab;
 
     private void Awake()
     {
@@ -27,9 +28,9 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer(int _id, string _username, Vector3 _position, Quaternion _rotation)
     {
         GameObject _player;
-        if (_id == Client.instance.myId)
+        if (_id == 1)
         {
-            _player = Instantiate(localPlayerPrefab, _position, _rotation);
+            _player = Instantiate(vrPlayerPrefab, _position, _rotation);
         }
         else
         {

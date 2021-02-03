@@ -9,6 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 5bea9b3a90d60e541a576c5abcb50891
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/TestScene.unity
     guid: df1b584a1801bb74a863186234b910bd
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 508323204d62eb84a929ccfebc51b6ad,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: a659537745722d745823b327cdfe8703,
+      type: 2}
