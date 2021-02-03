@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
 
     private void Look()
     {
-        float _mouseVertical = -Input.GetAxis("Mouse Y");
+/*        float _mouseVertical = -Input.GetAxis("Mouse Y");
         float _mouseHorizontal = Input.GetAxis("Mouse X");
 
         verticalRotation += _mouseVertical * sensitivity * Time.deltaTime;
@@ -34,6 +34,6 @@ public class CameraController : MonoBehaviour
         verticalRotation = Mathf.Clamp(verticalRotation, -clampAngle, clampAngle);
 
         transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
-        player.transform.rotation = Quaternion.Euler(0f, horizontalRotation, 0f);
+        player.transform.rotation = Quaternion.Euler(0f, horizontalRotation, 0f);*/
     }
 }
