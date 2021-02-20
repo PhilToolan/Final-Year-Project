@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8847631203886929530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 838689314}
   - component: {fileID: 838689315}
   - component: {fileID: 838689316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: XR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,8 @@ GameObject:
   - component: {fileID: 8847631204320228396}
   - component: {fileID: 8847631204320228399}
   - component: {fileID: 8847631204320228398}
-  m_Layer: 0
+  - component: {fileID: 729494860}
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -396,12 +397,12 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Position
     m_Type: 0
     m_ExpectedControlType: Vector3
-    m_Id: 
+    m_Id: 1cd8fe0c-52b0-4caf-b6ce-d356264db7ab
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: 53994443-6ffa-4bf6-9444-26cc7508933d
       m_Path: <XRHMD>/centerEyePosition
       m_Interactions: 
       m_Processors: 
@@ -412,18 +413,49 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Rotation
     m_Type: 0
     m_ExpectedControlType: Quaternion
-    m_Id: 
+    m_Id: b36344d9-fcb2-46dc-863f-057cac4c7859
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: 755c20e4-a7a1-431b-891c-245abd11f2c0
       m_Path: <XRHMD>/centerEyeRotation
       m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Main Camera - TPD - Rotation
       m_Flags: 0
+--- !u!114 &729494860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847631204320228385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &8847631204831923784
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +469,7 @@ GameObject:
   - component: {fileID: 8847631204831923796}
   - component: {fileID: 8847631204831923799}
   - component: {fileID: 8847631204831923798}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RightHandTeleportController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,7 +898,7 @@ GameObject:
   - component: {fileID: 8847631204994462240}
   - component: {fileID: 8847631204994462243}
   - component: {fileID: 8847631204994462242}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LeftTeleportController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8847631205074243284}
   - component: {fileID: 8847631205074243285}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1416,7 @@ GameObject:
   - component: {fileID: 8847631205494226572}
   - component: {fileID: 8847631205494226575}
   - component: {fileID: 8847631205494226574}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1632,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8847631205494226560}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1705,7 +1737,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8847631205494226560}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -1810,7 +1842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8847631205606885202}
   - component: {fileID: 8847631205606885203}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1901,7 +1933,7 @@ GameObject:
   - component: {fileID: 8847631205798240835}
   - component: {fileID: 8847631205798240837}
   - component: {fileID: 8847631205798240836}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
