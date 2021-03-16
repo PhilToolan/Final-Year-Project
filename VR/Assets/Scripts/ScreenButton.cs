@@ -12,4 +12,12 @@ public class ScreenButton : MonoBehaviour
         screenmenu.SetActive(true);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            screenmenu.SetActive(false);
+        }
+    }
+
 }
