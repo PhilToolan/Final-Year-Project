@@ -202,7 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 173718531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,6 +234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: USB
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343609762198159674, guid: 1f981c06230237e4e8d8d533192a8118,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7066393548480659686, guid: 1f981c06230237e4e8d8d533192a8118,
         type: 3}
@@ -2153,6 +2158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractableHoverScale
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507625188600566117, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+        type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 1507625188600566138, guid: b56442b6c5bd5db4faa5f66c3e77d294,
         type: 3}
