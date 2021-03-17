@@ -9,7 +9,7 @@ public class Rope : MonoBehaviour
 
 	public GameObject linkPrefab;
 
-	//public Weight weigth;
+	public Weight weigth;
 
 	public int links = 7;
 
@@ -29,14 +29,14 @@ public class Rope : MonoBehaviour
 
 			previousRB = link.GetComponent<Rigidbody>();
 
-			/*			if (i < links - 1)
-						{
-							previousRB = link.GetComponent<Rigidbody>();
-						}
-						else
-						{
-							weigth.ConnectRopeEnd(link.GetComponent<Rigidbody>());
-						}*/
+			if (i < links - 1)
+			{
+				previousRB = link.GetComponent<Rigidbody>();
+			}
+			else
+			{
+				weigth.ConnectRopeEnd(link.GetComponent<Rigidbody>());
+			}
 
 
 		}
