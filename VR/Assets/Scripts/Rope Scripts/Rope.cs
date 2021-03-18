@@ -13,13 +13,25 @@ public class Rope : MonoBehaviour
 
 	public int links = 7;
 
+	//public Transform[] children;
+	public LineRenderer line;
+	List<GameObject> children = new List<GameObject>();
+
 	void Start()
 	{
+		line = gameObject.GetComponent<LineRenderer>();
+
+
 		GenerateRope();
+
+
+		GetLinePositions();
 	}
 
 	void GenerateRope()
 	{
+
+		//Segments for physics
 		Rigidbody previousRB = hook;
 		for (int i = 0; i < links; i++)
 		{
@@ -27,7 +39,7 @@ public class Rope : MonoBehaviour
 			HingeJoint joint = link.GetComponent<HingeJoint>();
 			joint.connectedBody = previousRB;
 
-			previousRB = link.GetComponent<Rigidbody>();
+			//previousRB = link.GetComponent<Rigidbody>();
 
 			if (i < links - 1)
 			{
@@ -39,6 +51,42 @@ public class Rope : MonoBehaviour
 			}
 
 
+		}
+
+		//Line segments
+		line.positionCount = links;
+	}
+
+	public void GetLinePositions()
+    {
+		/*		for (int j = 0; j < links; j++)
+				{
+					children[j] = gameObject.transform.GetChild(j);
+				}*/
+		foreach (Transform child in this.gameObject.transform)
+		{
+			children.Add(child.gameObject);
+		}
+	}
+
+	void LateUpdate()
+	{
+		if (line.enabled)
+        {
+			CheckLen();
+			for (int i = 0; i < links; i++)
+			{
+				line.SetPosition(i, children[i].transform.position);
+			}
+		}
+
+	}
+
+	void CheckLen()
+    {
+		if (children.Count < links)
+		{
+			line.enabled = false;
 		}
 	}
 
