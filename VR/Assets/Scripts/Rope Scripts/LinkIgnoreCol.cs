@@ -10,4 +10,8 @@ public class LinkIgnoreCol : MonoBehaviour
         Physics.IgnoreLayerCollision(9, 11);
     }
 
+    void OnDestroy()
+    {
+        transform.parent.SendMessage("ChildWasDestroyed");
+    }
 }
