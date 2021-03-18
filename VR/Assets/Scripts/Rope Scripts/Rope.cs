@@ -17,8 +17,6 @@ public class Rope : MonoBehaviour
 	public LineRenderer line;
 	List<GameObject> children = new List<GameObject>();
 
-	private int count;
-
 	void Start()
 	{
 		line = gameObject.GetComponent<LineRenderer>();
@@ -77,28 +75,10 @@ public class Rope : MonoBehaviour
 	{
 		if (line.enabled)
         {
-			//CheckLen();
 			for (int i = 0; i < links; i++)
 			{
 				line.SetPosition(i, children[i].transform.position);
 			}
-		}
-
-	}
-
-	void CheckLen()
-    {
-		if (children.Count < count)
-		{
-			line.enabled = false;
-		}
-	}
-
-	void Update()
-    {
-		if (Input.GetKeyUp(KeyCode.Space))
-        {
-			line.enabled = false;
 		}
 
 	}
