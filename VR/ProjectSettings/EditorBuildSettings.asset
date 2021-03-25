@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldInteractionDemo.unity
     guid: 3d16fc5db26e2354e9ac2a5031a52e6d
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1070f49629ad85b4cb35ebb924a45e1a
+  - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 362c0f110c871534993f785506070756
   m_configObjects:
