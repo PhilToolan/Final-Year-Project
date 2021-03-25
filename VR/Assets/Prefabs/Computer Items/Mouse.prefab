@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3233373022705536488}
   - component: {fileID: 4122117922415194053}
   - component: {fileID: 9208977037218788948}
+  - component: {fileID: 5201230554852365692}
   m_Layer: 0
-  m_Name: Cube.001
+  m_Name: Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5201230554852365692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828046209620038741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0142705, y: 3.7803671, z: 1.1912136}
+  m_Center: {x: 0, y: -0.09682486, z: -0.34876516}

@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 48038929808747139}
   - component: {fileID: 8743732862361967645}
   - component: {fileID: 887762583537500354}
+  - component: {fileID: 7658095794561516682}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7658095794561516682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097667929584280681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1146624, y: 0.5531778, z: 1.4479855}
+  m_Center: {x: 0, y: -0.2936247, z: 0.33023193}

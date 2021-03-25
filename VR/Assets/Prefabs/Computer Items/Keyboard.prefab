@@ -92,8 +92,9 @@ GameObject:
   - component: {fileID: 4536188763486738651}
   - component: {fileID: 77149266177585760}
   - component: {fileID: 5471850477713847306}
+  - component: {fileID: 5675364142368027012}
   m_Layer: 0
-  m_Name: Plane.030
+  m_Name: Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,6 +192,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5675364142368027012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801294948689357448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6088082, y: 0.5118347, z: 0.034656677}
+  m_Center: {x: -0.5935163, y: 0.1032412, z: -0.017328339}
 --- !u!1 &884820467490435041
 GameObject:
   m_ObjectHideFlags: 0
