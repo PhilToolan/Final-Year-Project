@@ -105,7 +105,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood_Desk
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5744834177788672236, guid: 507619a737ea1dd4386405fdb0001549, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 507619a737ea1dd4386405fdb0001549, type: 3}
 --- !u!4 &5160284178146944340 stripped
 Transform:

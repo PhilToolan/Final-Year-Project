@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8313023716244237810}
   - component: {fileID: 6104977081927620920}
   - component: {fileID: 5744834177788672236}
+  - component: {fileID: 2756906853677604886}
   m_Layer: 0
   m_Name: Wood_Desk
   m_TagString: Untagged
@@ -91,8 +92,21 @@ MeshCollider:
   m_GameObject: {fileID: 5744834177788672237}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1843689209865246678, guid: fa692333440316d41b0dcaa757fd4dc2, type: 3}
+--- !u!65 &2756906853677604886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744834177788672237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.250628, y: 76.3171, z: 3.283585}
+  m_Center: {x: 0.035390586, y: -0.2000501, z: 0.69850963}
