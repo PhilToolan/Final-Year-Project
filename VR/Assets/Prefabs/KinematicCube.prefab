@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7517549319329480228}
   m_Layer: 0
   m_Name: KinematicCube
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7517549319329480230}
-  m_LocalRotation: {x: -0, y: -0.9347332, z: -0, w: 0.35535038}
+  m_LocalRotation: {x: 0, y: -0.93473274, z: 0, w: 0.35535157}
   m_LocalPosition: {x: 0.370687, y: 1.931, z: -0.6664238}
   m_LocalScale: {x: 0.15798, y: 0.15798, z: 0.15798}
   m_Children: []
@@ -58,6 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -82,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7517549319329480234
 BoxCollider:
   m_ObjectHideFlags: 0

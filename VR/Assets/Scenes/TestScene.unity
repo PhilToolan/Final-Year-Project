@@ -2867,11 +2867,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: KinematicCube
       objectReference: {fileID: 0}
-    - target: {fileID: 7517549319329480230, guid: 10297a1bb8a48324da4743a14b7528ef,
-        type: 3}
-      propertyPath: m_TagString
-      value: Key
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
 --- !u!1 &540779422 stripped
