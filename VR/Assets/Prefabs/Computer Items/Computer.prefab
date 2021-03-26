@@ -417,7 +417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8411291036599110349}
-  - component: {fileID: -5866789096028065729}
+  - component: {fileID: 1591122035939878627}
   m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
@@ -447,7 +447,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &-5866789096028065729
+--- !u!65 &1591122035939878627
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -458,8 +458,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.76813555, y: 1.1491542, z: 1.5119486}
+  m_Center: {x: 1.3887093, y: 1.8937647, z: 2.5775542}
 --- !u!1 &6023363119054227310
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// </summary>
 public class XRExclusiveSocketInteractor : XRSocketInteractor
 {
-    public string AcceptedType;
+    public string AcceptedType = "USB";
 
     public override bool CanSelect(XRBaseInteractable interactable)
     {
