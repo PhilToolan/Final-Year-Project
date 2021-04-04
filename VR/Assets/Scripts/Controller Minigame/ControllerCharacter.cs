@@ -5,7 +5,10 @@ using UnityEngine;
 public class ControllerCharacter : MonoBehaviour
 {
     public float speed = 5;
-    public float rotSpeed = 100;
+//    public GameObject bulletPrefab;
+//    public Transform spawnPoint;
+    public bool shooting = false;
+    public int fireRate = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -13,10 +16,41 @@ public class ControllerCharacter : MonoBehaviour
 
     }
 
+/*    private void OnEnable()
+    {
+        StartCoroutine(Shoot());
+    }
+
+    IEnumerator Shoot()
+    {
+        while (true)
+        {
+            if (shooting)
+            {
+                GameObject bullet = GameObject.Instantiate<GameObject>(bulletPrefab
+                    , spawnPoint.position
+                    , transform.rotation
+                    );
+
+            }
+            yield return new WaitForSeconds(1.0f / (float)fireRate);
+        }
+    }*/
+
     // Update is called once per frame
     void Update()
     {
         Move();
+
+/*        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject bullet = GameObject.Instantiate<GameObject>(bulletPrefab
+                    , spawnPoint.position
+                    , transform.rotation
+                    );
+        }
+*/
+
     }
 
     void Move()
@@ -38,4 +72,6 @@ public class ControllerCharacter : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0, 0);
         }
     }
+
+
 }
