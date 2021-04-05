@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You have clicked on the screen!
+  m_Text: Plug in a USB to get an access point.
 --- !u!1 &1345668821
 GameObject:
   m_ObjectHideFlags: 0
