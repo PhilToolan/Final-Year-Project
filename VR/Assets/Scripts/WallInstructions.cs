@@ -3,29 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WallInteractionButton : MonoBehaviour
+public class WallInstructions : MonoBehaviour
 {
 
     public GameObject wallmenu;
     public Text wallText;
-    [SerializeField] private string message;
+    [SerializeField] private string message = "You need more access points!";
     public int accessPoints = 1;
-    public int requiredPoints;
-    public string curMessage;
-    public GameObject realWall;
+    public int requiredPoints = 3;
+    [SerializeField] private string curMessage;
 
     void OnMouseDown()
     {
         DisplayMessage();
-        if (accessPoints <= requiredPoints)
-        {
-            wallmenu.SetActive(true);
-        }
-        if (accessPoints > requiredPoints)
-        {
-            Destroy(realWall.gameObject);
-            Destroy(this.gameObject);
-        }
+        wallmenu.SetActive(true);
     }
 
     void Update()
@@ -35,7 +26,7 @@ public class WallInteractionButton : MonoBehaviour
             wallmenu.SetActive(false);
         }
 
-        if (accessPoints <= requiredPoints)
+        if (accessPoints == requiredPoints)
         {
             message = curMessage;
         }
