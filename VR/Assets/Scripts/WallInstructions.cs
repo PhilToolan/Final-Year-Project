@@ -12,6 +12,7 @@ public class WallInstructions : MonoBehaviour
     public int accessPoints = 1;
     public int requiredPoints = 3;
     [SerializeField] private string curMessage;
+    public Animator animator;
 
     void OnMouseDown()
     {
@@ -21,10 +22,6 @@ public class WallInstructions : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            wallmenu.SetActive(false);
-        }
 
         if (accessPoints == requiredPoints)
         {
@@ -40,6 +37,11 @@ public class WallInstructions : MonoBehaviour
     public void IncreasePoints()
     {
         accessPoints += 1;
+    }
+
+    public void Close()
+    {
+        animator.SetTrigger("Close");
     }
 
 

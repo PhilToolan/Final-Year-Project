@@ -6,18 +6,17 @@ public class ScreenButton : MonoBehaviour
 {
 
     public GameObject screenmenu;
+    public Animator animator;
 
     void OnMouseDown()
     {
         screenmenu.SetActive(true);
     }
 
-    void Update()
+    public void Close()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            screenmenu.SetActive(false);
-        }
+        animator.SetTrigger("Close");
     }
+
 
 }

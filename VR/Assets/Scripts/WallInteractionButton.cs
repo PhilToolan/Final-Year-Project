@@ -13,6 +13,7 @@ public class WallInteractionButton : MonoBehaviour
     public int requiredPoints;
     public string curMessage;
     public GameObject realWall;
+    public Animator animator;
 
     void OnMouseDown()
     {
@@ -30,10 +31,6 @@ public class WallInteractionButton : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            wallmenu.SetActive(false);
-        }
 
         if (accessPoints <= requiredPoints)
         {
@@ -50,6 +47,12 @@ public class WallInteractionButton : MonoBehaviour
     {
         accessPoints += 1;
     }
+
+    public void Close()
+    {
+        animator.SetTrigger("Close");
+    }
+
 
 
 }
