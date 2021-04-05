@@ -14,7 +14,14 @@ public class WallInteractionButton : MonoBehaviour
     void OnMouseDown()
     {
         DisplayMessage();
-        wallmenu.SetActive(true);
+        if (accessPoints <= 1)
+        {
+            wallmenu.SetActive(true);
+        }
+        if (accessPoints > 1)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void Update()
@@ -28,10 +35,6 @@ public class WallInteractionButton : MonoBehaviour
         {
             message = "Need more access points!";
         }
-        if (accessPoints > 1)
-        {
-            message = "I love YOU ";
-        }
     }
 
     void DisplayMessage()
@@ -43,5 +46,6 @@ public class WallInteractionButton : MonoBehaviour
     {
         accessPoints += 1;
     }
+
 
 }
