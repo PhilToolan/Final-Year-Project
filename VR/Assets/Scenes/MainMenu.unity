@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232, y: 109}
+  m_AnchoredPosition: {x: -232, y: 71.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237430535
@@ -702,6 +702,173 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429913471}
   m_CullTransparentMesh: 0
+--- !u!1001 &468054536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3323782750190686418, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782750227684535, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782750467684854, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Text
+      value: "Default controls: \nUse the Trigger button to interact with UI.\nUse
+        the Thumbstick to move and turn.\nUse the Grip button to grab objects. When
+        holding an object with your left-hand Ray Interactor, you can use the Thumbstick
+        to rotate and translate the object. \n\n\n\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782750467684857, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782750900395005, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.01645884
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.399
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 904
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 520
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040016, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040017, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040019, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1234104725}
+    - target: {fileID: 3323782751196040020, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Name
+      value: "\uF702UICanvas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751196040021, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323782751894658506, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d1af6d7ca8856f418333e848b5d7d52, type: 3}
 --- !u!1001 &541812515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1151,6 +1318,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: 1. Tutorial Level
       objectReference: {fileID: 0}
+    - target: {fileID: 3323782750467684854, guid: 8d1af6d7ca8856f418333e848b5d7d52,
+        type: 3}
+      propertyPath: m_Text
+      value: "Default controls: \nUse the Trigger button to interact with UI.\nUse
+        the Thumbstick to move and turn.\nUse the Grip button to grab objects. When
+        holding an object with your left-hand Ray Interactor, you can use the Thumbstick
+        to rotate and translate the object. \n\n\n\n\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 3323782750733354597, guid: 8d1af6d7ca8856f418333e848b5d7d52,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1392,7 +1567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &987051701
 RectTransform:
   m_ObjectHideFlags: 0
