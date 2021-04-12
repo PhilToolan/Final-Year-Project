@@ -8,6 +8,8 @@ public class TurretController : MonoBehaviour {
     public Transform spawnPoint;
     public float rotSpeed = 180; // In degrees per second
 
+    public bool finalEnenmy = false;
+
     public int fireRate = 2;
 
     public GameObject hackgame;
@@ -121,8 +123,11 @@ public class TurretController : MonoBehaviour {
 
     void OnDestroy()
     {
-        hackgame.SetActive(false);
-        controllerplayer.SetActive(true);
+        if (finalEnenmy)
+        {
+            hackgame.SetActive(false);
+            controllerplayer.SetActive(true);
+        }
     }
 
 
