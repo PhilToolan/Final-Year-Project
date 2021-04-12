@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4415725553257077047}
   - component: {fileID: 5108530797551865188}
   - component: {fileID: -476717873015869227}
+  - component: {fileID: 2763470886211591600}
   m_Layer: 0
   m_Name: Controller Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2598be627cf86664d8f126c1550d8a15, type: 2}
+  - {fileID: 2100000, guid: 7f3dfc2806c83ca458448aa38af8a2af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40acb3087727ec46ae07842c92b80b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2763470886211591600
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872617333980645713}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

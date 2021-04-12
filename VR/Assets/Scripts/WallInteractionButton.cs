@@ -14,6 +14,7 @@ public class WallInteractionButton : MonoBehaviour
     public string curMessage;
     public GameObject realWall;
     public Animator animator;
+    public GameObject hackmenu;
 
     void OnMouseDown()
     {
@@ -53,6 +54,9 @@ public class WallInteractionButton : MonoBehaviour
         animator.SetTrigger("Close");
     }
 
-
+    void OnDisable()
+    {
+        hackmenu.SetActive(true);
+    }
 
 }

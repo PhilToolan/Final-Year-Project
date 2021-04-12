@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &78081648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929053811496052148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  m_AttachTransform: {fileID: 929053809764595542}
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: RemoveHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WallInteractionButton, Assembly-CSharp
+        m_MethodName: IncreasePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WallInstructions, Assembly-CSharp
+        m_MethodName: IncreasePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 54de44d5fc42e9945ad25d9adbed58aa,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
 --- !u!1 &6202117732524897222
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +248,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.01
       objectReference: {fileID: 0}
+    - target: {fileID: 1108790309431772725, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108790309431772725, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108790309431772725, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1507625188600566117, guid: b56442b6c5bd5db4faa5f66c3e77d294,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
@@ -175,7 +287,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 929053811496052137}
+      objectReference: {fileID: 0}
     - target: {fileID: 1507625188600566117, guid: b56442b6c5bd5db4faa5f66c3e77d294,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -225,6 +337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 3.3131
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853655143008126953, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5061145888734634471, guid: b56442b6c5bd5db4faa5f66c3e77d294,
         type: 3}
@@ -286,7 +403,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: computer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5258523416481890843, guid: b56442b6c5bd5db4faa5f66c3e77d294, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b56442b6c5bd5db4faa5f66c3e77d294, type: 3}
 --- !u!4 &6788136046890767659 stripped
 Transform:
@@ -294,18 +412,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1731775463816574156}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &929053811496052137 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1507625188600566117, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+--- !u!1 &929053811496052148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1507625188600566136, guid: b56442b6c5bd5db4faa5f66c3e77d294,
     type: 3}
   m_PrefabInstance: {fileID: 1731775463816574156}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+--- !u!4 &929053809764595542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1507625190056248218, guid: b56442b6c5bd5db4faa5f66c3e77d294,
+    type: 3}
+  m_PrefabInstance: {fileID: 1731775463816574156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1876801766817640023
 PrefabInstance:
   m_ObjectHideFlags: 0
