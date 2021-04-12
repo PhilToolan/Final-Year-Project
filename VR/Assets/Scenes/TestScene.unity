@@ -12648,39 +12648,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589169737}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &617948938 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4539545792310999327, guid: df75198817986404aaaab2d46f30f3e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 4539545791844703765}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &617948939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4539545792310999326, guid: df75198817986404aaaab2d46f30f3e2,
     type: 3}
   m_PrefabInstance: {fileID: 4539545791844703765}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &617948943
+--- !u!114 &617948943 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4539545791844703765}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617948938}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3819645fcb0607146810e9d3d3f58bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallmenu: {fileID: 1660494697}
-  wallText: {fileID: 2073119202}
-  message: 
-  accessPoints: 1
-  requiredPoints: 1
-  curMessage: Need More Access Points!
-  realWall: {fileID: 1283374155}
-  animator: {fileID: 1660494702}
-  hackmenu: {fileID: 1089297691}
 --- !u!1 &621942453
 GameObject:
   m_ObjectHideFlags: 0
@@ -28595,6 +28580,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1003090317}
     m_Modifications:
+    - target: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2, type: 3}
+      propertyPath: wallmenu
+      value: 
+      objectReference: {fileID: 1660494697}
+    - target: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2, type: 3}
+      propertyPath: wallText
+      value: 
+      objectReference: {fileID: 2073119202}
+    - target: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2, type: 3}
+      propertyPath: realWall
+      value: 
+      objectReference: {fileID: 1283374155}
+    - target: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1660494702}
+    - target: {fileID: 617948943, guid: df75198817986404aaaab2d46f30f3e2, type: 3}
+      propertyPath: hackmenu
+      value: 
+      objectReference: {fileID: 1089297691}
     - target: {fileID: 4539545792310999326, guid: df75198817986404aaaab2d46f30f3e2,
         type: 3}
       propertyPath: m_LocalPosition.x
