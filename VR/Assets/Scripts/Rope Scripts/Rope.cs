@@ -13,6 +13,8 @@ public class Rope : MonoBehaviour
 
 	public int links = 7;
 
+	public WallInteractionButton script;
+
 	//public Transform[] children;
 	public LineRenderer line;
 	List<GameObject> children = new List<GameObject>();
@@ -86,6 +88,7 @@ public class Rope : MonoBehaviour
 	void ChildWasDestroyed()
     {
 		line.enabled = false;
+		script.IncreasePoints();
 	}
 
 }

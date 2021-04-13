@@ -4694,6 +4694,11 @@ PrefabInstance:
       propertyPath: links
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8074067326948094573, guid: c190b0e78c72ff64e981e50aa48fef37,
+        type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 2044793789}
     - target: {fileID: 8074067326948094575, guid: c190b0e78c72ff64e981e50aa48fef37,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -10397,6 +10402,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 339213540}
@@ -10411,6 +10420,50 @@ PrefabInstance:
     - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RemoveHighlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210534181}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1634380474}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2044793789}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4994751399713226508, guid: d47789ec998ac4249b78c192cad506fe,
         type: 3}
@@ -11809,6 +11862,46 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 826f2d8e16053f5429c89e1d501a1612, type: 2}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1634380474}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2044793789}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7926018728773619080, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_Name
@@ -37677,6 +37770,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1716094968}
@@ -37691,6 +37788,50 @@ PrefabInstance:
     - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RemoveHighlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210534181}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1634380474}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2044793789}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: WallInteractionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: IncreasePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 78081648, guid: d47789ec998ac4249b78c192cad506fe, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4994751399713226508, guid: d47789ec998ac4249b78c192cad506fe,
         type: 3}
@@ -45113,6 +45254,11 @@ PrefabInstance:
       propertyPath: links
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8074067326948094573, guid: c190b0e78c72ff64e981e50aa48fef37,
+        type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 2044793789}
     - target: {fileID: 8074067326948094575, guid: c190b0e78c72ff64e981e50aa48fef37,
         type: 3}
       propertyPath: m_LocalPosition.y
