@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ada8ad957fba41948bab9887718e7e8c,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3158,7 +3159,7 @@ PrefabInstance:
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1500001
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
@@ -6026,6 +6027,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680cc712cb55643a38fb5bec71bcc683, type: 3}
+--- !u!1 &404797973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404797975}
+  - component: {fileID: 404797974}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &404797974
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404797973}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 10, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &404797975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404797973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.28, y: 1.25, z: 32.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 104
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &405680310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11902,6 +11967,11 @@ PrefabInstance:
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: threshold
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7926018728773619080, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_Name
@@ -11915,7 +11985,7 @@ PrefabInstance:
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
@@ -42597,7 +42667,7 @@ PrefabInstance:
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
@@ -42740,6 +42810,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bac789f219877f84aacdc58de60eb98c, type: 2}
     - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1716094969}
@@ -42752,6 +42827,16 @@ PrefabInstance:
         type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: threshold
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597735098687224116, guid: 740685016efa7944ba669dc86eaffda3,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7926018728773619080, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
@@ -42766,7 +42851,7 @@ PrefabInstance:
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1500001
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
@@ -43263,7 +43348,7 @@ PrefabInstance:
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8118988849589610274, guid: 740685016efa7944ba669dc86eaffda3,
         type: 3}
