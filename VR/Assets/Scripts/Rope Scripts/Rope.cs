@@ -85,8 +85,17 @@ public class Rope : MonoBehaviour
 
 	}
 
-	void ChildWasDestroyed()
+/*	void ChildWasDestroyed()
     {
+		line.enabled = false;
+		script.IncreasePoints();
+	}*/
+
+	public void KillChild()
+    {
+
+		Destroy(transform.GetChild(10));
+		Debug.Log("kill child");
 		line.enabled = false;
 		script.IncreasePoints();
 	}
