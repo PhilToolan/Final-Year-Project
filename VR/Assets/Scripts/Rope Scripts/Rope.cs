@@ -9,6 +9,9 @@ public class Rope : MonoBehaviour
 
 	public GameObject linkPrefab;
 
+	public GameObject timer;
+	public Timer time;
+
 	public Weight weigth;
 
 	public int links = 7;
@@ -22,7 +25,7 @@ public class Rope : MonoBehaviour
 	void Start()
 	{
 		line = gameObject.GetComponent<LineRenderer>();
-
+		time = timer.GetComponent<Timer>();
 
 		GenerateRope();
 
@@ -94,10 +97,20 @@ public class Rope : MonoBehaviour
 	public void KillChild()
     {
 
-		Destroy(transform.GetChild(10));
+		Destroy(transform.GetChild(10).gameObject);
+		time.timerIsRunning = false;
 		Debug.Log("kill child");
 		line.enabled = false;
 		script.IncreasePoints();
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == "bombdisarm")
+		{
+			KillChild();
+		}
+		
 	}
 
 }
