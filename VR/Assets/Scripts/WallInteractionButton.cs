@@ -15,6 +15,7 @@ public class WallInteractionButton : MonoBehaviour
     public GameObject realWall;
     public Animator animator;
     public GameObject hackmenu;
+    public bool hacked;
 
     void OnMouseDown()
     {
@@ -56,7 +57,11 @@ public class WallInteractionButton : MonoBehaviour
 
     void OnDisable()
     {
-        hackmenu.SetActive(true);
+        if (hacked)
+        {
+            hackmenu.SetActive(true);
+        }
+        
     }
 
 }

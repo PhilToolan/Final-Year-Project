@@ -9,6 +9,8 @@ public class ControllerCharacter : MonoBehaviour
 //    public Transform spawnPoint;
     public bool shooting = false;
     public int fireRate = 2;
+    public GameObject gameover;
+    public int health = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -73,5 +75,27 @@ public class ControllerCharacter : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "EnemyBullet")
+        {
+            Debug.Log("Collision");
+            ReduceHealth();
+        }
+    }
+
+    void ReduceHealth()
+    {
+        if (health > 0)
+        {
+            health = health - 1;
+        }
+
+        if (health <= 0)
+        {
+            gameover.SetActive(true);
+            Destroy(this.gameObject, 3);
+        }
+    }
 
 }

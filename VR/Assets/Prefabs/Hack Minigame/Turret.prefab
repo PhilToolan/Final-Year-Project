@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b498102ccc34abd42b2d8452251c6e51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   spawnPoint: {fileID: 5247300938680435555}
   rotSpeed: 180
+  finalEnenmy: 0
   fireRate: 2
+  hackgame: {fileID: 0}
+  controllerplayer: {fileID: 0}
 --- !u!1 &2001644948903837980
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +209,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b498102ccc34abd42b2d8452251c6e51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

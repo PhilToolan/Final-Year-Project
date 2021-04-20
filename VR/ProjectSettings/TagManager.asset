@@ -7,6 +7,9 @@ TagManager:
   - Key
   - Bullet
   - bombdisarm
+  - Enemy
+  - Enemy Bullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
