@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Timer : MonoBehaviour
     public bool finalBomb = false;
     public Text timeText;
 
-    [SerializeField] private string mission;
+    [SerializeField] private string mainMenu;
 
     private void Start()
     {
@@ -52,6 +53,6 @@ public class Timer : MonoBehaviour
 
     public void LoadMission()
     {
-        SceneManager.LoadScene(mission);
+        SceneManager.LoadScene(mainMenu);
     }
 }
