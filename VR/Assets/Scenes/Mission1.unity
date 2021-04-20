@@ -19902,6 +19902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 10
   timerIsRunning: 1
+  finalBomb: 1
   timeText: {fileID: 1047781664}
 --- !u!114 &971612839
 MonoBehaviour:
@@ -21087,6 +21088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 10
   timerIsRunning: 1
+  finalBomb: 0
   timeText: {fileID: 1708558415}
 --- !u!114 &1065347939
 MonoBehaviour:

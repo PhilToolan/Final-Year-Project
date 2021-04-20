@@ -7,7 +7,10 @@ public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
+    public bool finalBomb = false;
     public Text timeText;
+
+    [SerializeField] private string mission;
 
     private void Start()
     {
@@ -31,6 +34,10 @@ public class Timer : MonoBehaviour
                 timerIsRunning = false;
             }
         }
+        else if (finalBomb)
+        {
+
+        }
     }
 
     void DisplayTime(float timeToDisplay)
@@ -41,5 +48,10 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void LoadMission()
+    {
+        SceneManager.LoadScene(mission);
     }
 }
