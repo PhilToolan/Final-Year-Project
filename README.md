@@ -1,4 +1,4 @@
-# Final-Year-Project
+# The Heist VR
  
 To run, locate the build folder in the VR directory. Download and click the executable in the folder.
 
