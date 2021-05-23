@@ -1,6 +1,6 @@
 # The Heist VR
  
-To run download the VR folder and create a build in Unity for your chosen platform.
+To run, download the VR folder and create a build in Unity for your chosen platform.
 
 # Abstract
 
